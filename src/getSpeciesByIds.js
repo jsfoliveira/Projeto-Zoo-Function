@@ -1,5 +1,5 @@
 const data = require('../data/zoo_data');
-// RESOLUÇÃO: Fiz o object destructuring para acessar o specis no data. Fiz um (...ids) para acessar todos os ids. Se o que eu não digitar nada como parâmetro, deve retornar um array vazio. Fiz um map para percorrer cada especie.id(que vai verificar o id de cada especie, se é igual ao que digitei), vai retornar o array da especie.
+// RESOLUÇÃO: Fiz o object destructuring para acessar o specis no data. Fiz um (...ids) para acessar todos os ids. Se o que eu não digitar nada como parâmetro, deve retornar um array vazio. Fiz um map para percorrer cada especie.id(que vai verificar o id de cada especie, se é igual ao que digitei), vai retornar o array da especie.Tive ajuda da minha colega Noelma.
 function getSpeciesByIds(...ids) {
   const { species } = data;
   if (ids === undefined) {
