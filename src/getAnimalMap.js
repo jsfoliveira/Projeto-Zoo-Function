@@ -54,6 +54,7 @@ const sexoResidentes = (sex, sorted) => species.reduce((acc, item) => {
   residentsNames[name] = sorted ? sexoDosResidentes.sort() : sexoDosResidentes;
   return acc;
 }, {});
+
 // RESOLUÇÃO (penúltimo e último requisito): Se sorted for verdade, retorna somente nomes de animais macho/fêmea com os nomes dos animais ordenados. O outro if, retorna pelo sexo somente.
 const aux = (options) => {
   const { sex, sorted } = options;
@@ -68,6 +69,7 @@ const aux = (options) => {
   }
   return nameResidentes();
 };
+
 // RESOLUÇÃO: Se não tiver parâmetro e se o includeNames não for especificado, retorna a função que traz objeto com espécie e localização (requisito 1 e 2).
 const getAnimalMap = (options) => {
   if (options === undefined || options.includeNames === undefined) {
